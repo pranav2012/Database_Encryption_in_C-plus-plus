@@ -1,14 +1,14 @@
 # C/C++ Project 
 
-* ## Database SQL to store all the users and their details
-* ## SignUp Page
-* ## Login Page
-* ## Encryption
-* ## admin user who can delete users or edit their details
-* ## normal user can login and play a guess game
+* #### Database SQL to store all the users and their details
+* #### SignUp Page
+* #### Login Page
+* #### Encryption
+* #### admin user who can delete users or edit their details
+* #### normal user can login and play a guess game
  
 
-# about
+# about the Project
 
 When program will start there will be a menu for signup login or exit we can sign up as a new user or login just like a menu driven program
 in signup and login password will be converted into cypher text then stored in data base any algorithm for encryption will work learned few in 
