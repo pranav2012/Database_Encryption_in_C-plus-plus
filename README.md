@@ -5,7 +5,7 @@
 * #### Login Page
 * #### Encryption
 * #### admin user who can delete users or edit their details
-* #### normal user can login and play a guess game
+* #### normal user can login and view their details 
  
 
 # about the Project
