@@ -1,10 +1,10 @@
-#include <iostream>
-
-using namespace std;
-
-class Users{
-    public:
-      void userdisplay(){
-          std::cout<<"user details";
-      };
+class users{
+public:
+  char users_name[50];
+  string rollno;
+  string year;
+  string course;
+  string password;
+  string passwordcheck;
+  void sign_up();
 };

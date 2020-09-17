@@ -18,8 +18,6 @@ void login() //run krne ke liye main.cpp run krliyo bhai thora or modify krliyo 
         cin >> inPassword;
         if (inName == name && inPassword == password){
             cout << "Login Successful\n"<< "Welcome "<< inName;
-            Users obj;
-            obj.userdisplay();
             tofile();
         }
         else
