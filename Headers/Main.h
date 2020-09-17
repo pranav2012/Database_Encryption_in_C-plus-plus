@@ -2,7 +2,6 @@
 #include "Login.h"
 #include "SignUp.h"
 #include "loading.h"
-
 using namespace std;
 
 void mainfunction(){
