@@ -2,6 +2,8 @@
 #include "Login.h"
 #include "SignUp.h"
 #include "loading.h"
+#include "os.h"
+
 using namespace std;
 
 void mainfunction(){
@@ -14,11 +16,11 @@ void mainfunction(){
         switch (choice)
         {
         case 1:
-            system("clear");
+            islinux?system("clear"):system("cls");
             login();
             break;
         case 2:
-            system("clear");
+            islinux?system("clear"):system("cls");
             signup();
             break;
         case 3:
