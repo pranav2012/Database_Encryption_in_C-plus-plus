@@ -18,10 +18,10 @@ void login() //run krne ke liye main.cpp run krliyo bhai thora or modify krliyo 
         islinux ? system("clear") : system("cls");
         cout << "\n"
              << "Enter Username:\n";
-        cin >> inName;
+        getline(cin, inName);
         cout << "\n"
              << "Enter Password:\n ";
-        cin >> inPassword;
+        getline(cin, inPassword);
         if (inName == name && inPassword == password)
         {
             cout << "Login Successful\n"

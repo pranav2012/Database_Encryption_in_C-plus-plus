@@ -4,7 +4,7 @@
 class users
 {
 public:
-  char users_name[50];
+  string users_name;
   string rollno;
   string year;
   string course;

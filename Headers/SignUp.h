@@ -6,15 +6,15 @@
 using namespace std;
 void users::sign_up()
 {
-  cout << "PLEASE MENTION OUR DETAILS BELOW \n";
+  cout << "PLEASE MENTION YOUR DETAILS BELOW \n";
   cout << "Please Enter usersname:\n";
-  cin >> users_name;
+  getline(cin, users_name);
   cout << "Please enter your course name:\n";
-  cin >> course;
+  getline(cin, course);
   cout << "Please enter your current year:\n";
-  cin >> year;
+  getline(cin, year);
   cout << "Please enter your ROLL NO.:\n";
-  cin >> rollno;
+  getline(cin, rollno);
   int s = 0;
 start:
   cout << "Please Enter Password(password must be atleast 8 characters):\n ";
