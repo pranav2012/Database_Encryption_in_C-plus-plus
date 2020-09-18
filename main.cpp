@@ -1,6 +1,7 @@
 #include "Headers/Main.h"
 
-int main(){
+int main()
+{
     mainfunction();
     return 0;
 }

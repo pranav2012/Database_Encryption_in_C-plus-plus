@@ -1,3 +1,5 @@
+#ifndef MAIN_H
+#define MAIN_H
 #include <iostream>
 #include "Login.h"
 #include "SignUp.h"
@@ -6,31 +8,34 @@
 
 using namespace std;
 
-void mainfunction(){
+void mainfunction()
+{
     loading();
     int choice;
-    do{
-        start:
-        cout<<"\nMenu:\n1.Login\n2.SignUp\n3.Exit\nEnter your choice: ";
-        cin>>choice;
+    do
+    {
+    start:
+        cout << "\nMenu:\n1.Login\n2.SignUp\n3.Exit\nEnter your choice: ";
+        cin >> choice;
         switch (choice)
         {
         case 1:
-            islinux?system("clear"):system("cls");
+            islinux ? system("clear") : system("cls");
             login();
             break;
         case 2:
-            islinux?system("clear"):system("cls");
+            islinux ? system("clear") : system("cls");
             signup();
             break;
         case 3:
             exit(0);
             break;
         default:
-            cout<<"Wrong choice!";
+            cout << "Wrong choice!";
             getchar();
             goto start;
             break;
         }
-    }while(choice != 4);
+    } while (choice != 4);
 }
+#endif
