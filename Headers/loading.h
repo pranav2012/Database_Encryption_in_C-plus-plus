@@ -62,18 +62,19 @@ void loading()
         }
         system("clear");
     }
-    else{
-     	int i = 0; 
-     	char load[26]; 
-     	while(i < 25) 
-     	{ 
-     		system("cls"); 
-     		load[i++] = '#'; 
-     		load[i] = '\0'; 
-      
-    		printf("\n\nLOADING [%-25s]", load); 
-     		usleep(100000); 
-     	} 
-     system("cls"); 
+    else
+    {
+        int i = 0;
+        char load[26];
+        while (i < 25)
+        {
+            system("cls");
+            load[i++] = '#';
+            load[i] = '\0';
+
+            printf("\n\nLOADING [%-25s]", load);
+            usleep(100000);
+        }
+        system("cls");
     }
 }

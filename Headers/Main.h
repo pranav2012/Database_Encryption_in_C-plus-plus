@@ -32,7 +32,6 @@ void mainfunction()
             break;
         default:
             cout << "Wrong choice!";
-            getchar();
             goto start;
             break;
         }

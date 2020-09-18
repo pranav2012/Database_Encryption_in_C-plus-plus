@@ -18,6 +18,7 @@ void login() //run krne ke liye main.cpp run krliyo bhai thora or modify krliyo 
         islinux ? system("clear") : system("cls");
         cout << "\n"
              << "Enter Username:\n";
+        getline(cin, inName); //please dont remove getline its added twice bcos of an error
         getline(cin, inName);
         cout << "\n"
              << "Enter Password:\n ";
