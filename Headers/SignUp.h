@@ -8,6 +8,7 @@ void users::sign_up()
 {
   cout << "PLEASE MENTION YOUR DETAILS BELOW \n";
   cout << "Please Enter usersname:\n";
+  getline(cin, users_name); //please dont remove getline its added twice bcos of an error
   getline(cin, users_name);
   cout << "Please enter your course name:\n";
   getline(cin, course);
@@ -16,6 +17,7 @@ void users::sign_up()
   cout << "Please enter your ROLL NO.:\n";
   getline(cin, rollno);
   int s = 0;
+
 start:
   cout << "Please Enter Password(password must be atleast 8 characters):\n ";
   cin >> password;
