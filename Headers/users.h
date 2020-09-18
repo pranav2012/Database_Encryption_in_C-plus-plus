@@ -1,3 +1,6 @@
+#ifndef USERS_H
+#define USERS_H
+
 class users{
 public:
   char users_name[50];
@@ -8,3 +11,5 @@ public:
   string passwordcheck;
   void sign_up();
 };
+
+#endif
