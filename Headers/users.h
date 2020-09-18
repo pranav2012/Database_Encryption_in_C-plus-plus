@@ -1,7 +1,8 @@
 #ifndef USERS_H
 #define USERS_H
 
-class users{
+class users
+{
 public:
   char users_name[50];
   string rollno;
