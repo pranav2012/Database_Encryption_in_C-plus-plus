@@ -1,0 +1,40 @@
+# Project: sqlite340
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = dllmain.o sqlite3.o signup.o $(RES)
+LINKOBJ  = dllmain.o sqlite3.o signup.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib" --no-export-all-symbols --add-stdcall-alias --def sqlite3.def  
+INCS =  -I"C:/Dev-Cpp/include" 
+CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include" 
+BIN  = sqlite340.dll
+CXXFLAGS = $(CXXINCS) -DBUILDING_DLL=1   -O3
+CFLAGS = $(INCS) -DBUILDING_DLL=1   -O3
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before sqlite340.dll all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+DLLWRAP=dllwrap.exe
+DEFFILE=libsqlite340.def
+STATICLIB=libsqlite340.a
+
+$(BIN): $(LINKOBJ)
+	$(DLLWRAP) --output-def $(DEFFILE) --implib $(STATICLIB) $(LINKOBJ) $(LIBS) -o $(BIN)
+
+dllmain.o: dllmain.c
+	$(CC) -c dllmain.c -o dllmain.o $(CFLAGS)
+
+sqlite3.o: sqlite3.c
+	$(CC) -c sqlite3.c -o sqlite3.o $(CFLAGS)
+
+signup.o: signup.c
+	$(CC) -c signup.c -o signup.o $(CFLAGS)
