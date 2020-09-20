@@ -1,7 +1,12 @@
+#ifndef DATABASE_H
+#define DATABASE_H //DO NOT REMOVE THESE HEADERS ELSE WILL RESULT IN ERROR
+#include <iostream>
+#endif
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <sqlite3.h> 
+using namespace std;
 
 static int callback(void *NotUsed, int argc, char **argv, char **azColName) {
    int i;
@@ -12,7 +17,7 @@ static int callback(void *NotUsed, int argc, char **argv, char **azColName) {
    return 0;
 }
 
-int main(int argc, char* argv[]) {
+void db(){
    sqlite3 *db;
    char *zErrMsg = 0;
    int rc;
@@ -49,4 +54,6 @@ int main(int argc, char* argv[]) {
    }
    sqlite3_close(db);
    return 0;
+  
 }
+
