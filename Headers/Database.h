@@ -1,12 +1,10 @@
 #ifndef DATABASE_H
 #define DATABASE_H //DO NOT REMOVE THESE HEADERS ELSE WILL RESULT IN ERROR
 
-#include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include "sqlite/sqlite3.h" 
-using namespace std;
 
 static int callback(void *NotUsed, int argc, char **argv, char **azColName) {
    int i;
