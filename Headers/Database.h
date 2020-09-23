@@ -1,7 +1,7 @@
 #ifndef DATABASE_H
 #define DATABASE_H //DO NOT REMOVE THESE HEADERS ELSE WILL RESULT IN ERROR
+
 #include <iostream>
-#endif
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -56,4 +56,4 @@ void db(){
    return 0;
   
 }
-
+#endif

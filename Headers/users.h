@@ -1,10 +1,16 @@
-#include <iostream>
+#ifndef USERS_H
+#define USERS_H
 
-using namespace std;
-
-class Users{
-    public:
-      void userdisplay(){
-          std::cout<<"user details";
-      };
+class users
+{
+public:
+  string users_name;
+  string rollno;
+  string year;
+  string course;
+  string password;
+  string passwordcheck;
+  void sign_up();
 };
+
+#endif

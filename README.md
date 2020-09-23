@@ -6,7 +6,9 @@
 * #### Encryption
 * #### admin user who can delete users or edit their details
 * #### normal user can login and view their details 
- 
+
+### Badges
+[![Run on Repl.it](https://repl.it/badge/github/pranav2012/Database_Encryption_in_C-plus-plus)](https://repl.it/github/pranav2012/Database_Encryption_in_C-plus-plus)
 
 # about the Project
 
