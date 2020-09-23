@@ -1,5 +1,4 @@
 @echo off
 
-g++ main.cpp -o main.exe
-start main.exe
+g++ main.cpp lib/sqlite3.dll -o main.exe && main.exe
 DEL main.exe

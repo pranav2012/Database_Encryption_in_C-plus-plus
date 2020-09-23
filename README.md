@@ -7,9 +7,6 @@
 * #### admin user who can delete users or edit their details
 * #### normal user can login and view their details 
 
-### Badges
-[![Run on Repl.it](https://repl.it/badge/github/pranav2012/Database_Encryption_in_C-plus-plus)](https://repl.it/github/pranav2012/Database_Encryption_in_C-plus-plus)
-
 # about the Project
 
 When program will start there will be a menu for signup login or exit we can sign up as a new user or login just like a menu driven program

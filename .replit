@@ -1,2 +1,0 @@
-language = "c++"
-run = "g++ main.cpp -o main && ./main"

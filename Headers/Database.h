@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <sqlite3.h> 
+#include "sqlite/sqlite3.h" 
 using namespace std;
 
 static int callback(void *NotUsed, int argc, char **argv, char **azColName) {
@@ -34,7 +34,7 @@ void db(){
    
    if( rc ) {
       fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(db));
-      return(0);
+      return;
    } else {
       fprintf(stderr, "Opened database successfully\n");
    }
@@ -53,7 +53,7 @@ void db(){
       fprintf(stdout, "Records created successfully\n");
    }
    sqlite3_close(db);
-   return 0;
+   return;
   
 }
 #endif
