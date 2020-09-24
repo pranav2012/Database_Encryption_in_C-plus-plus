@@ -13,6 +13,8 @@ void login() //run krne ke liye main.cpp run krliyo bhai thora or modify krliyo 
 {
     int i = 0;
     string command, name, password, inName, inPassword, registerName, registerPassword;
+    name = "admin";
+    password = "123";
     while (i != 3)
     {
         islinux ? system("clear") : system("cls");

@@ -2,9 +2,8 @@
 #include <fstream>
 #include <string.h>
 using namespace std;
-int main()
-{
-  
+
+void tofile(){  
   string name;
   int prn;
   string course;
@@ -35,7 +34,5 @@ int main()
   cout << course << endl;
 
   file.close();
-  
-  return 0;
 }
 
