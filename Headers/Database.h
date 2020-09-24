@@ -21,11 +21,13 @@ void db(){
    int rc;
    char *sql;
    char username[50], password[50];
-   
+
    printf("Enter username\n");
-   gets(username);
+   fgets(username, sizeof(username), stdin);
+   if (username[strlen(username)-1] == '\n') username[strlen(username)-1] = '\0';
    printf("Enter password\n");
-   gets(password);
+   fgets(password, sizeof(password), stdin);
+   if (password[strlen(password)-1] == '\n') password[strlen(password)-1] = '\0';
    
    /* Open database */
    rc = sqlite3_open("signupdb.sqlite", &db);
