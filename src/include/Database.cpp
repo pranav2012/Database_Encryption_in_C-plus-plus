@@ -1,6 +1,3 @@
-#ifndef DATABASE_H
-#define DATABASE_H //DO NOT REMOVE THESE HEADERS ELSE WILL RESULT IN ERROR
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -30,7 +27,7 @@ void db(){
    if (password[strlen(password)-1] == '\n') password[strlen(password)-1] = '\0';
    
    /* Open database */
-   rc = sqlite3_open("signupdb.sqlite", &db);
+   rc = sqlite3_open("db/signupdb.sqlite", &db);
    
    if( rc ) {
       fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(db));
@@ -56,4 +53,3 @@ void db(){
    return;
   
 }
-#endif
