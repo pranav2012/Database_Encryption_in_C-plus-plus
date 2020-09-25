@@ -1,0 +1,5 @@
+*.c linguist-detectable=true
+*.cpp linguist-detectable=true
+Makefile linguist-detectable=true
+*.sh linguist-detectable=true
+*.bat linguist-detectable=true
